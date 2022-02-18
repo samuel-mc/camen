@@ -152,7 +152,7 @@ ul {
 
 /* Hero */
 .hero {
-  background-image: url("../images/hero.png");
+  background-image: url("../images/hero.jpg");
   background-size: cover;
   background-position: center;
   color: var(--black);
@@ -191,7 +191,7 @@ ul {
 
 /* Seccion "empresa mexicana ..." */
 .main-about {
-  background-image: url("../images/aboutBG.png");
+  background-image: url("../images/aboutBG.jpg");
   background-size: cover;
   background-position: center;
   padding: 32px;
@@ -253,7 +253,7 @@ ul {
 }
 
 .main-solucion .solucion__header {
-  background-image: url("../images/solucionBG.png");
+  background-image: url("../images/solucionBG.jpg");
   background-size: cover;
   background-position: top;
   color: var(--white);
@@ -463,7 +463,7 @@ ul {
     Archivo nosotros.html
 *************************** */
 .nosotros-hero {
-  background-image: url("../images/aboutBG.png");
+  background-image: url("../images/aboutBG.jpg");
   background-size: cover;
   background-position: top;
   width: 100%;
@@ -574,7 +574,7 @@ ul {
 }
 
 .industrias__content {
-  background-image: url("../images/aboutBG.png");
+  background-image: url("../images/aboutBG.jpg");
   background-size: cover;
   background-position: center;
   display: grid;
