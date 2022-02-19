@@ -806,8 +806,27 @@ ul {
 
   .header-bottom__logo {
     margin-left: 32px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     width: calc(100% - 64px);
+  }
+
+  .navbar-toggler.collapsed svg:nth-child(1) {
+    display: block;
+    transition: var(--transition-in);
+  }
+  .navbar-toggler.collapsed svg:nth-child(2) {
+    display: none;
+    transition: var(--transition-in);
+  }
+
+  .navbar-toggler svg:nth-child(1) {
+    display: none;
+    transition: var(--transition-in);
+  }
+
+  .navbar-toggler-icon svg {
+    fill: var(--blue-dark);
   }
 
   .logo {
@@ -1006,5 +1025,9 @@ ul {
     margin: auto 0 auto 64px;
     text-align: left;
     width: auto;
+  }
+
+  .header-bottom__logo .navbar-toggler {
+    display: none;
   }
 }
