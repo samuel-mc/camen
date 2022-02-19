@@ -55,15 +55,29 @@ ul {
   padding: 12px 0;
 }
 
-.header-top > div {
+.header-top>div {
   display: flex;
   margin: 0 8px;
 }
 
+.header-top__mail {
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  transition: var(--transition-out);
+}
+
+.header-top__mail:hover {
+  color: var(--brown);
+  text-decoration: none;
+  transition: var(--transition-in);
+}
+
+
+
 .header-top img {
   /* Icono del avion de papel */
-  filter: invert(53%) sepia(64%) saturate(558%) hue-rotate(355deg)
-    brightness(87%) contrast(83%);
+  filter: invert(53%) sepia(64%) saturate(558%) hue-rotate(355deg) brightness(87%) contrast(83%);
   width: 20px;
   height: 20px;
   margin-right: 12px;
@@ -77,9 +91,13 @@ ul {
   margin-left: 40px;
 }
 
+.header-top__icons a:hover {
+  filter: invert(51%) sepia(86%) saturate(385%) hue-rotate(355deg) brightness(86%) contrast(93%);
+  transition: var(--transition-in);
+}
+
 .header-top__icons svg {
-  filter: invert(99%) sepia(23%) saturate(0%) hue-rotate(316deg)
-    brightness(103%) contrast(101%);
+  filter: invert(99%) sepia(23%) saturate(0%) hue-rotate(316deg) brightness(103%) contrast(101%);
   width: 24px;
   height: 24px;
   margin-right: 12px;
@@ -142,8 +160,7 @@ ul {
 .main__contact svg {
   height: 32px;
   margin: auto;
-  filter: invert(53%) sepia(64%) saturate(558%) hue-rotate(355deg)
-    brightness(87%) contrast(83%);
+  filter: invert(53%) sepia(64%) saturate(558%) hue-rotate(355deg) brightness(87%) contrast(83%);
 }
 
 /* *************************
@@ -197,7 +214,7 @@ ul {
   padding: 32px;
 }
 
-.main-about > div {
+.main-about>div {
   background-color: var(--white);
   border-radius: 12px;
   box-shadow: 0px 10px 15px #00000029;
@@ -261,7 +278,7 @@ ul {
   text-align: center;
 }
 
-.main-solucion .solucion__header > div {
+.main-solucion .solucion__header>div {
   background-color: rgba(49, 88, 134, 0.9);
   height: 100%;
   padding: 32px 0;
@@ -285,12 +302,12 @@ ul {
   top: -80px;
 }
 
-.solucion__content a{
+.solucion__content a {
   color: var(--dark-gray);
   transition: var(--transition-out);
 }
 
-.solucion__content a:hover{
+.solucion__content a:hover {
   transform: scale(1.1);
   text-decoration: none;
   transition: var(--transition-in);
@@ -597,7 +614,7 @@ ul {
   padding: 8px 0;
 }
 
-.nav__header > h1 {
+.nav__header>h1 {
   font-size: var(--lg);
 }
 
@@ -673,8 +690,7 @@ ul {
 .industrias__contact--icon img {
   width: 100%;
   height: 100%;
-  filter: invert(53%) sepia(64%) saturate(558%) hue-rotate(355deg)
-    brightness(87%) contrast(83%);
+  filter: invert(53%) sepia(64%) saturate(558%) hue-rotate(355deg) brightness(87%) contrast(83%);
 }
 
 .industrias__contact--text {
@@ -703,22 +719,76 @@ ul {
   margin: 16px 0;
 }
 
-.industrias__info ul {
+.list--doted {
   list-style: disc;
   color: var(--dark-gray);
   font-size: var(--sm);
   margin: 16px;
-  
+
 }
 
 .industrias__info img {
   width: 100%;
 }
 
-.industrias__images > div {
+.industrias__images>div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 200px));
 }
+
+/* Archivo faqs.html */
+.faqs-main {
+  font-size: var(--md);
+  margin: 32px 0;
+}
+
+.faqs-main #accordion .card {
+  margin: 32px 0;
+}
+
+.faqs-main #accordion .card .card-body {
+  padding: 24px 32px;
+}
+
+.faqs-main #accordion .card-header {
+  background-color: var(--blue-dark);
+  color: var(--white);
+  font-size: var(--md);
+  font-weight: bold;
+  padding: 0;
+}
+
+.faqs-main #accordion .list--doted {
+  color: var(--black);
+  font-size: var(--md);
+}
+
+.faqs-main #accordion .card-header button {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 100%;
+  padding: 32px 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.faqs-main #accordion .card-header button.collapsed {
+  background-color: var(--blue-light);
+  color: var(--black);
+  transition: var(--transition-out);
+}
+
+.faqs-main #accordion .card-header button.collapsed:hover {
+  background-color: var(--blue-dark);
+  color: var(--white);
+  transition: var(--transition-in);
+}
+
 
 @media (min-width: 320px) {
   .padding {
@@ -816,7 +886,7 @@ ul {
     grid-template-columns: 3fr 1fr;
   }
 
-  .historia__item > div {
+  .historia__item>div {
     margin-bottom: 32px;
   }
 
