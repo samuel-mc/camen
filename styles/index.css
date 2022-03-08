@@ -719,6 +719,39 @@ ul {
   margin: 16px 0;
 }
 
+.industrias__info .info__brand {
+  color: var(--blue-dark);
+  font-weight: bold;
+}
+
+.info__list {
+  font-size: var(--sm);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.info__list li {
+  align-items: center;
+  border: 1px solid var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  transition: var(--transition-out);
+
+}
+
+.info__list--nav a:hover {
+  color: var(--blue-dark);
+  background-color: var(--blue-light);
+  text-decoration: none;
+  transition: var(--transition-in);
+
+}
+
 .list--doted {
   list-style: disc;
   color: var(--dark-gray);
@@ -731,9 +764,9 @@ ul {
   width: 100%;
 }
 
-.industrias__images>div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 200px));
+img.info__image {
+  width: 200px;
+  height: 200px;
 }
 
 /* Archivo faqs.html */
@@ -935,13 +968,13 @@ ul {
   }
 
   .hero {
-    height: 440px;
+    height: 640px;
   }
 
   .hero__content {
     padding: 64px;
-    top: calc(50% - 163px);
-    width: 640px;
+    top: calc(50% - 276px);
+    width: 720px;
     height: auto;
   }
 
