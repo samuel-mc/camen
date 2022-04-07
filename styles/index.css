@@ -153,6 +153,10 @@ ul {
   width: 72px;
 }
 
+.main__contact--data h2 img {
+  height: 16px;
+}
+
 .main__contact h4 {
   color: var(--md-gray);
 }
@@ -767,6 +771,11 @@ ul {
 img.info__image {
   width: 200px;
   height: 200px;
+}
+
+img.info__image--lg {
+  min-width: 240px;
+  max-width: 600px;
 }
 
 /* Archivo faqs.html */
